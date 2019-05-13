@@ -1,38 +1,43 @@
 .wrapper{
-   width: 100%;
-   height: auto;
-   background:#c5c5c5c5;
-   text-align: center;
-   z-index: 0;
+    width: 100%;
+    height: auto;
+    background:#c5c5c5c5;
+    text-align: center;
+    z-index: 0;
 }
 
 .wrapper .btn-export{
-    padding: 10px 20px;
-    background-color: #2a95dd;
-    color: #ffffff;
     display: inline-block;
     margin: 40px 0;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #2a95dd;
 }
 
 .modal-wrapper{
-width: 100%;
-background: #000000;
-opacity: 0.5;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 1;
+    position: relative;
+    z-index: 2;    
 }
 
 .modalExport{
    width: 50%;
    height: auto;
-   background:#ffffff;
    margin: 40px auto;
-   z-index: 2;
    padding: 40px 20px;
-   opacity: 1;
+   background:#ffffff;
+   opacity: 1;   
+   z-index: 2;  
+}
+
+.modal-backdroop{
+    position: fixed;
+    background: #000000;
+    opacity: 0.5;  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .hide{
@@ -64,6 +69,5 @@ z-index: 1;
 }
 
 #exportValue p{
-
     color: #000000;
 }
